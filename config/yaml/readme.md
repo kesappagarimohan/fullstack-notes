@@ -55,7 +55,7 @@ Values in YAML's key-value pairs are scalar. They act like the scalar types in l
 
 **Yaml**
 
-` age:20`
+` age: 20`
 
 ---
 
@@ -69,7 +69,7 @@ YAML strings are Unicode. In most situations, you don't have to specify them in 
 
 **Yaml**
 
-` name:cat` _or_ ` name:"cat"`
+` name: cat` _or_ ` name: "cat"`
 
 ---
 
@@ -84,8 +84,8 @@ YAML indicates boolean values with the keywords True, On and Yes for true. False
 **Yaml**
 
 ```
-pet:true
-pet:On
+pet: true
+pet: On
 ```
 
 ## Objects
@@ -93,20 +93,22 @@ pet:On
 **Javascript**
 
 ```
-{
-    animals:{
-        name:"cat",
-        age:20
-    }
-}
+let animals = {
+  name: "cat",
+  age: 20,
+  pet: true,
+};
+
 ```
 
 **Yaml**
 
 ```
 animals:
-  name:cat
-  age:20
+  name: cat
+  age: 20
+  pet: true
+
 ```
 
 ---
@@ -116,16 +118,19 @@ animals:
 **Javascript**
 
 ```
-  animals:[
-    {
-    name:"cat",
-    age:20
-    },
-    {
-    name:"dog",
-    age:22
-   }
-  ]
+  let animals = [
+  {
+    name: "cat",
+    age: 20,
+    pet: true,
+  },
+  {
+    name: "dog",
+    age: 22,
+    pet: true,
+  },
+];
+
 ```
 
 **Yaml**
@@ -134,6 +139,9 @@ animals:
 animals:
   - name: cat
     age: 20
+    pet: true
   - name: dog
     age: 22
+    pet: true
+
 ```
