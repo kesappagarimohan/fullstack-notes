@@ -36,3 +36,87 @@ animals:
   name:dog
   age:10
 ```
+
+## Data Types
+
+Values in YAML's key-value pairs are scalar. They act like the scalar types in languages like Perl, Javascript, and Python. It's usually good enough to enclose strings in quotes, leave numbers unquoted, and let the parser figure it out. But that's only the tip of the iceberg. YAML is capable of a great deal more.
+
+## Key-Value Pairs
+
+> The key is always a string
+
+> The value is a scalar so that it can be any datatype
+
+## Number
+
+**Javascript**
+
+`let age=20`
+
+**Yaml**
+
+` age:20`
+
+---
+
+## String
+
+**Javascript**
+
+`let name="cat"`
+
+**Yaml**
+
+` name:cat` _or_ ` name:"cat"`
+
+---
+
+## Objects
+
+**Javascript**
+
+```
+{
+    animals:{
+        name:"cat",
+        age:20
+    }
+}
+```
+
+**Yaml**
+
+```
+animals:
+  name:cat
+  age:20
+```
+
+---
+
+## Arrays
+
+**Javascript**
+
+```
+  animals:[
+    {
+    name:"cat",
+    age:20
+    },
+    {
+    name:"dog",
+    age:22
+   }
+  ]
+```
+
+**Yaml**
+
+```
+animals:
+  - name: cat
+    age: 20
+  - name: dog
+    age: 22
+```
