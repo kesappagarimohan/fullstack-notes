@@ -61,6 +61,8 @@ Values in YAML's key-value pairs are scalar. They act like the scalar types in l
 
 ## String
 
+YAML strings are Unicode. In most situations, you don't have to specify them in quotes.if you want you can
+
 **Javascript**
 
 `let name="cat"`
@@ -70,6 +72,21 @@ Values in YAML's key-value pairs are scalar. They act like the scalar types in l
 ` name:cat` _or_ ` name:"cat"`
 
 ---
+
+## Boolean
+
+YAML indicates boolean values with the keywords True, On and Yes for true. False is indicated with False, Off, or No.
+
+**Javascript**
+
+`let pet=true`
+
+**Yaml**
+
+```
+pet:true
+pet:On
+```
 
 ## Objects
 
