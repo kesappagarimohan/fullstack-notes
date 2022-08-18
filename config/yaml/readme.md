@@ -14,7 +14,7 @@ YAML allows you to add comments to files using the **hash symbol** (#)
 
 ```
 animals:
-  name:# enter your name
+  name:#enter your name
   age:10
 
 ```
